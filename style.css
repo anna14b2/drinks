@@ -1,45 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+/* Header font - Rosella Engraved */
 
-/* font-family: 'Yeseva One', cursive; */
+@import url("https://use.typekit.net/mrb7hxc.css");
+
+/* font-family: rosella-engraved, sans-serif; */
+
+
+/* sub-header font: hero new */
+
+@import url("https://use.typekit.net/mrb7hxc.css");
+
+/* font-family: hero-new, sans-serif; */
+
+
+/* Body font - Josefin Sans */
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 /* font-family: 'Josefin Sans', sans-serif; */
 
+
+/* Cursive accent font - Liu Jian Mao Cao */
+
 @import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
 
 /* font-family: 'Liu Jian Mao Cao', cursive; */
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap");
-
-/* font-family: 'Oswald', sans-serif; */
-
-
-/* THIS IS ALL meant for editing. You might want to do it differently, 
-name the variables differently, 
-use the fonts in other ways in the font hierarchy etc. */
-
-
-/* change these */
-
 :root {
-    --turqoise: #4ecbd9;
-    --orange: #f29966;
-    --redorange: #f26b5e;
+    --blackish: #252621;
+    --green: #403E22;
+    --yellow: #BF9E39;
+    --orange: #8C4E03;
+    --red: #592202;
     --offwhite: #f2f2f2;
     --darkgrey: #1a1a1a;
     --ochre: #f2b872;
     --medium-grey: #8c8a80;
-    --sharp-lime: #b0f222;
     --primary-font: "Open Sans", sans-serif;
     --secondary-font: "Droid Serif", serif;
     --main-text-color: #000;
     --white-space: 1rem;
     --primary-font-color: var(--offwhite);
-    --header-font: "Oswald", sans-serif;
-    --accent-font: "Liu Jian Mao Cao", cursive;
+    --header-font: "rosella-engraved", sans-serif;
+    --subheader-font: --accent-font: "Liu Jian Mao Cao", cursive;
     --body-font: "Josefin Sans", sans-serif;
-    --alternate-font: "Yeseva One", cursive;
 }
 
 button {
@@ -96,7 +99,7 @@ body {
     font-size: 3rem;
     font-weight: medium;
     color: var(--offwhite);
-    font-family: var(--alternate-font);
+    font-family: var(--header-font);
 }
 
 .header-wrapper h2 {
@@ -156,7 +159,7 @@ ul li:last-child {
 }
 
 .swatchgrid {
-    background-color: var(--medium-grey);
+    background-color: var(--darkgrey);
     padding: 1rem;
 }
 
@@ -165,15 +168,15 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-    background-color: var(--turqoise);
+    background-color: var(--green);
 }
 
 .color-swatch-2 {
-    background-color: var(--orange);
+    background-color: var(--yellow);
 }
 
 .color-swatch-3 {
-    background-color: var(--redorange);
+    background-color: var(--red);
 }
 
 .color-swatch-4 {
@@ -182,7 +185,7 @@ ul li:last-child {
 }
 
 .color-swatch-5 {
-    background-color: var(--darkgrey);
+    background-color: var(--blackish);
 }
 
 .textures li {
