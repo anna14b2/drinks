@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+/* font-family: 'Yeseva One', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
+
+/* font-family: 'Liu Jian Mao Cao', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap");
+
+/* font-family: 'Oswald', sans-serif; */
+
+
+/* THIS IS ALL meant for editing. You might want to do it differently, 
+name the variables differently, 
+use the fonts in other ways in the font hierarchy etc. */
+
+
+/* change these */
+
+:root {
+    --turqoise: #4ecbd9;
+    --orange: #f29966;
+    --redorange: #f26b5e;
+    --offwhite: #f2f2f2;
+    --darkgrey: #1a1a1a;
+    --ochre: #f2b872;
+    --medium-grey: #8c8a80;
+    --sharp-lime: #b0f222;
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Droid Serif", serif;
+    --main-text-color: #000;
+    --white-space: 1rem;
+    --primary-font-color: var(--offwhite);
+    --header-font: "Oswald", sans-serif;
+    --accent-font: "Liu Jian Mao Cao", cursive;
+    --body-font: "Josefin Sans", sans-serif;
+    --alternate-font: "Yeseva One", cursive;
+}
+
+button {
+    transition: all 3s;
+}
+
+a {
+    transition: all 3s;
+}
+
+button:hover {
+    background-color: var(--orange);
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: var(--offwhite);
+}
+
+a:hover {
+    color: var(--redorange);
+    font-size: 1.6rem;
+}
+
+html {
+    font-size: 100%;
+    font-family: var(--primary-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header,
+main,
+footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: calc(2 * var(--white-space));
+}
+
+body {
+    background-color: var(--turqoise);
+}
+
+.full-width {
+    background: var(--darkgrey);
+    color: var(--offwhite);
+    width: 100%;
+}
+
+.header-wrapper h1 {
+    font-size: 3rem;
+    font-weight: medium;
+    color: var(--offwhite);
+    font-family: var(--alternate-font);
+}
+
+.header-wrapper h2 {
+    font-size: 1.8em;
+    color: var(--offwhite);
+    font-weight: medium;
+    margin: var(--white-space) 0;
+    font-family: var(--header-font);
+    letter-spacing: 0.05rem;
+}
+
+.header-wrapper h3 {
+    font-family: var(--header-font);
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: var(--white-space) 0;
+    /* font-style: italic; */
+}
+
+.header-wrapper h4 {
+    font-size: 1rem;
+    font-family: var(--accent-font);
+}
+
+main {
+    padding: calc(2 * var(--white-space));
+}
+
+section {
+    margin-bottom: calc(4 * var(--white-space));
+}
+
+.section-heading {
+    /* font-style: italic; */
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--offwhite);
+    background-color: var(--darkgrey);
+    padding: 1rem;
+    margin: 0.5rem 60% 1rem 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swatches li {
+    margin-right: 5vw;
+    height: 15vw;
+    width: 20%;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+.swatchgrid {
+    background-color: var(--medium-grey);
+    padding: 1rem;
+}
+
+.swatchgrid li {
+    border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.color-swatch-1 {
+    background-color: var(--turqoise);
+}
+
+.color-swatch-2 {
+    background-color: var(--orange);
+}
+
+.color-swatch-3 {
+    background-color: var(--redorange);
+}
+
+.color-swatch-4 {
+    background-color: var(--offwhite);
+    border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.color-swatch-5 {
+    background-color: var(--darkgrey);
+}
+
+.textures li {
+    height: 30vw;
+    width: 40%;
+    margin-right: 5vw;
+}
+
+.texture-swatch-1 {
+    background: url(../img/pw_maze_white.png) top left repeat;
+}
+
+.texture-swatch-2 {
+    background: url(../img/subtle_grunge.png) top left repeat;
+}
+
+.texture-swatch-1 {
+    background: url(../img/pw_maze_white.png) top left repeat;
+}
+
+.texture-swatch-3 {
+    background: url(../img/white_paperboard.png) top left repeat;
+}
+
+.images ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+.images li {
+    display: block;
+    /*margin-right: 5vw;*/
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 1rem;
+    /* border-radius: 2rem; */
+    background: var(--redorange);
+    text-align: center;
+    text-decoration: none;
+    font: bold 1.5em/1 var(--header-font);
+    letter-spacing: 1px;
+    color: var(--offwhite);
+    border: solid 1px var(--darkgrey);
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0px var(--darkgrey);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.secondary-button {
+    border: solid 1px var(--darkgrey);
+    background: none;
+}
+
+button:focus,
+button:active,
+button:focus-within {
+    outline: 0;
+    border-radius: 4px;
+}
+
+.typography-main {
+    color: var(--primary-font-color);
+}
+
+.h1-sample {
+    font-family: var(--alternate-font);
+    /* text-transform: uppercase; */
+    font-size: 2.4rem;
+    font-weight: bold;
+    /* border: solid 1px var(--offwhite); */
+    padding: 1rem;
+    background-color: var(--darkgrey);
+    /* background-color: var(--darkgrey); */
+}
+
+.h2-sample {
+    font-family: var(--header-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-bottom: solid 1px var(--darkgrey);
+    border-left: solid 1px var(--darkgrey);
+    margin-right: 20%;
+    color: var(--darkgrey);
+    /* color: var(--offwhite); */
+    padding: 1rem;
+}
+
+p.typography-sample {
+    font-family: var(--body-font);
+    color: var(--darkgrey);
+    /* color: var(--offwhite); */
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 960px;
+    padding: 1rem;
+    border-left: solid 1px var(--darkgrey);
+    /* background-color: var(--darkgrey); */
+    /* background-color: lightgrey; */
+    /* background-color: #2626260e; */
+    /* border-radius: 1rem; */
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    font-family: var(--body-font);
+    color: #DDF23D;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+p[class*="font-details-"] {
+    margin-top: 0.8rem;
+    margin-left: .8rem;
+    margin-bottom: calc(2 * var(--white-space));
+    font-size: 1rem;
+    font-family: var(--body-font);
+    font-weight: 400;
+    color: var(--darkgrey);
+}
+
+.adjectives ul {
+    font-size: 1.5rem;
+    font-family: var(--accent-font);
+}
+
+.adjectives ul {
+    flex-direction: column;
+}
+
+.adjectives ul ::before {
+    content: '• '
+}
+
+footer {
+    font-style: italic;
+    font-family: var(--body-font);
+    font-weight: 200;
+}
+
+@media (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
+    .swatches li {
+        margin-right: 3%;
+        height: 10vw;
+        width: 20%;
+    }
+    .textures li {
+        height: 15vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .adjectives ul {
+        flex-direction: row;
+    }
+}
