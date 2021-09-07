@@ -41,7 +41,8 @@
     --white-space: 1rem;
     --primary-font-color: var(--offwhite);
     --header-font: "rosella-engraved", sans-serif;
-    --subheader-font: --accent-font: "Liu Jian Mao Cao", cursive;
+    --subheader-font: "hero-new", sans-serif;
+    --accent-font: "Liu Jian Mao Cao", cursive;
     --body-font: "Josefin Sans", sans-serif;
 }
 
@@ -86,7 +87,7 @@ footer {
 }
 
 body {
-    background-color: var(--turqoise);
+    background-color: var(--blackish);
 }
 
 .full-width {
@@ -97,8 +98,9 @@ body {
 
 .header-wrapper h1 {
     font-size: 3rem;
-    font-weight: medium;
-    color: var(--offwhite);
+    /* font-weight: medium; */
+    /* color: var(--offwhite); */
+    color: var(--yellow);
     font-family: var(--header-font);
 }
 
@@ -107,7 +109,7 @@ body {
     color: var(--offwhite);
     font-weight: medium;
     margin: var(--white-space) 0;
-    font-family: var(--header-font);
+    font-family: var(--subheader-font);
     letter-spacing: 0.05rem;
 }
 
@@ -138,7 +140,7 @@ section {
     font-size: 1.5rem;
     font-weight: 200;
     color: var(--offwhite);
-    background-color: var(--darkgrey);
+    background-color: var(--darkgreen);
     padding: 1rem;
     margin: 0.5rem 60% 1rem 0;
 }
@@ -146,6 +148,8 @@ section {
 ul {
     display: flex;
     justify-content: space-between;
+    color: var(--offwhite);
+    list-style: none;
 }
 
 .swatches li {
@@ -195,19 +199,18 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-    background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(images/glass.jpg) top left repeat;
+    background-size: cover;
 }
 
 .texture-swatch-2 {
-    background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-    background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(images/wood.jpg) top left repeat;
+    background-size: cover;
 }
 
 .texture-swatch-3 {
-    background: url(../img/white_paperboard.png) top left repeat;
+    background: url(images/stone.jpg) top left repeat;
+    background-size: cover;
 }
 
 .images ul {
@@ -224,15 +227,15 @@ ul li:last-child {
 button {
     padding: 1rem;
     /* border-radius: 2rem; */
-    background: var(--redorange);
+    background: var(--red);
     text-align: center;
     text-decoration: none;
     font: bold 1.5em/1 var(--header-font);
     letter-spacing: 1px;
     color: var(--offwhite);
-    border: solid 1px var(--darkgrey);
+    border: solid 1px var(--offwhite);
     text-transform: uppercase;
-    text-shadow: -1px -1px 0px var(--darkgrey);
+    text-shadow: -2px -2px 0px var(--red);
     transition: all 0.2s ease;
     cursor: pointer;
     margin: 0 1rem 1rem 0;
@@ -240,7 +243,7 @@ button {
 }
 
 .secondary-button {
-    border: solid 1px var(--darkgrey);
+    border: solid 1px var(--offwhite);
     background: none;
 }
 
@@ -248,46 +251,46 @@ button:focus,
 button:active,
 button:focus-within {
     outline: 0;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .typography-main {
-    color: var(--primary-font-color);
+    color: var(--offwhite);
 }
 
 .h1-sample {
-    font-family: var(--alternate-font);
+    font-family: var(--header-font);
     /* text-transform: uppercase; */
     font-size: 2.4rem;
     font-weight: bold;
     /* border: solid 1px var(--offwhite); */
     padding: 1rem;
-    background-color: var(--darkgrey);
+    color: var(--yellow);
+    background-color: var(--darkgreen);
     /* background-color: var(--darkgrey); */
 }
 
 .h2-sample {
-    font-family: var(--header-font);
+    font-family: var(--subheader-font);
     font-size: 1.8rem;
     font-weight: 400;
     border-bottom: solid 1px var(--darkgrey);
     border-left: solid 1px var(--darkgrey);
     margin-right: 20%;
-    color: var(--darkgrey);
+    color: var(--offwhite);
     /* color: var(--offwhite); */
     padding: 1rem;
 }
 
 p.typography-sample {
     font-family: var(--body-font);
-    color: var(--darkgrey);
-    /* color: var(--offwhite); */
+    color: var(--offwhite);
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.5;
     max-width: 960px;
     padding: 1rem;
-    border-left: solid 1px var(--darkgrey);
+    border-left: solid 1px var(--red);
     /* background-color: var(--darkgrey); */
     /* background-color: lightgrey; */
     /* background-color: #2626260e; */
@@ -304,7 +307,7 @@ em {
 
 a {
     font-family: var(--body-font);
-    color: #DDF23D;
+    color: var(--yellow);
     font-size: 1.5rem;
     font-weight: 300;
     text-decoration: none;
@@ -318,7 +321,7 @@ p[class*="font-details-"] {
     font-size: 1rem;
     font-family: var(--body-font);
     font-weight: 400;
-    color: var(--darkgrey);
+    color: var(--off-white);
 }
 
 .adjectives ul {
