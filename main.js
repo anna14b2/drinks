@@ -1,4 +1,4 @@
-const url = "https://cocktails-240e.restdb.io/rest/recipes?max=2";
+const url = "https://cocktails-240e.restdb.io/rest/recipes";
 
 // The API key
 const options = {
