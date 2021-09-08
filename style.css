@@ -4,20 +4,17 @@
 
 /* font-family: rosella-engraved, sans-serif; */
 
-
 /* sub-header font: hero new */
 
 @import url("https://use.typekit.net/mrb7hxc.css");
 
 /* font-family: hero-new, sans-serif; */
 
-
 /* Body font - Josefin Sans */
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 /* font-family: 'Josefin Sans', sans-serif; */
-
 
 /* Cursive accent font - Liu Jian Mao Cao */
 
@@ -26,463 +23,462 @@
 /* font-family: 'Liu Jian Mao Cao', cursive; */
 
 :root {
-    --darkgreen: #252621;
-    --green: #403e22;
-    --yellow: #bf9e39;
-    --orange: #8c4e03;
-    --red: #592202;
-    --offwhite: #f2f2f2;
-    --darkgrey: #1a1a1a;
-    --ochre: #f2b872;
-    --medium-grey: #8c8a80;
-    --primary-font: "Open Sans", sans-serif;
-    --secondary-font: "Droid Serif", serif;
-    --main-text-color: #000;
-    --white-space: 1rem;
-    --primary-font-color: var(--offwhite);
-    --header-font: "rosella-engraved", sans-serif;
-    --subheader-font: "hero-new", sans-serif;
-    --accent-font: "Liu Jian Mao Cao", cursive;
-    --body-font: "Josefin Sans", sans-serif;
+  --darkgreen: #252621;
+  --green: #403e22;
+  --yellow: #bf9e39;
+  --orange: #8c4e03;
+  --red: #592202;
+  --offwhite: #f2f2f2;
+  --darkgrey: #1a1a1a;
+  --ochre: #f2b872;
+  --medium-grey: #8c8a80;
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Droid Serif", serif;
+  --main-text-color: #000;
+  --white-space: 1rem;
+  --primary-font-color: var(--offwhite);
+  --header-font: "rosella-engraved", sans-serif;
+  --subheader-font: "hero-new", sans-serif;
+  --accent-font: "Liu Jian Mao Cao", cursive;
+  --body-font: "Josefin Sans", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
-    transition: all 3s;
+  transition: all 3s;
 }
 
 a {
-    transition: all 3s;
+  transition: all 3s;
 }
 
 button:hover {
-    background-color: var(--orange);
-    transform: scale(1.05);
+  background-color: var(--orange);
+  transform: scale(1.05);
 }
 
 button:active {
-    background-color: var(--offwhite);
+  background-color: var(--offwhite);
 }
 
 a:hover {
-    color: var(--redorange);
-    font-size: 1.6rem;
+  color: var(--redorange);
+  font-size: 1.6rem;
 }
 
 html {
-    font-size: 100%;
-    font-family: var(--primary-font);
+  font-size: 100%;
+  font-family: var(--primary-font);
 }
 
 img {
-    max-height: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 header,
 main,
 footer {
-    max-height: 1300px;
-    margin: 0 auto;
-    padding: calc(2 * var(--white-space));
+  max-height: 1300px;
+  margin: 0 auto;
+  padding: calc(2 * var(--white-space));
 }
 
 body {
-    background-color: var(--darkgreen);
+  background-color: var(--darkgreen);
 }
 
 .full-height {
-    background: var(--darkgrey);
-    color: var(--offwhite);
-    height: 100%;
+  background: var(--darkgrey);
+  color: var(--offwhite);
+  height: 100%;
 }
 
 .header-wrapper h1 {
-    font-size: 3rem;
-    /* font-weight: medium; */
-    /* color: var(--offwhite); */
-    color: var(--yellow);
-    font-family: var(--header-font);
+  font-size: 3rem;
+  /* font-weight: medium; */
+  /* color: var(--offwhite); */
+  color: var(--yellow);
+  font-family: var(--header-font);
 }
 
 .header-wrapper h2 {
-    font-size: 1.8em;
-    color: var(--offwhite);
-    font-weight: medium;
-    margin: var(--white-space) 0;
-    font-family: var(--subheader-font);
-    letter-spacing: 0.05rem;
+  font-size: 1.8em;
+  color: var(--offwhite);
+  font-weight: medium;
+  margin: var(--white-space) 0;
+  font-family: var(--subheader-font);
+  letter-spacing: 0.05rem;
 }
 
 .header-wrapper h3 {
-    font-family: var(--header-font);
-    font-weight: 100;
-    font-size: 1.5rem;
-    margin: var(--white-space) 0;
-    /* font-style: italic; */
+  font-family: var(--header-font);
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin: var(--white-space) 0;
+  /* font-style: italic; */
 }
 
 .header-wrapper h4 {
-    font-size: 1rem;
-    font-family: var(--accent-font);
+  font-size: 1rem;
+  font-family: var(--accent-font);
 }
 
 main {
-    padding: calc(2 * var(--white-space));
+  padding: calc(2 * var(--white-space));
 }
 
 section {
-    margin-bottom: calc(4 * var(--white-space));
+  margin-bottom: calc(4 * var(--white-space));
 }
 
 .section-heading {
-    /* font-style: italic; */
-    font-family: var(--header-font);
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: var(--offwhite);
-    background-color: var(--darkgreen);
-    padding: 1rem;
-    margin: 0.5rem 60% 1rem 0;
+  /* font-style: italic; */
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: var(--offwhite);
+  background-color: var(--darkgreen);
+  padding: 1rem;
+  margin: 0.5rem 60% 1rem 0;
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
-    color: var(--offwhite);
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: var(--offwhite);
+  list-style: none;
 }
 
 .gallery {
-    margin-left: 8vw;
-    margin-right: 8vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
 }
 
 ul.spirits {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
 }
 
-.bottleName>* {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.bottleName > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottleName div {
-    background-color: var(--darkgrey);
-    border: solid 10px var(--red);
-    border-radius: 3px;
-    min-height: 23rem;
-    max-width: 20rem;
-    min-width: 15rem;
-    background-position: center;
+  background-color: var(--darkgrey);
+  border: solid 10px var(--red);
+  border-radius: 3px;
+  min-height: 23rem;
+  max-width: 20rem;
+  min-width: 15rem;
+  background-position: center;
 }
 
 #ginBottle {
-    background-image: url(images/ginYellow.svg);
-    background-repeat: no-repeat;
-    background-size: 30%;
+  background-image: url(images/ginYellow.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
 }
 
 #rumBottle {
-    background-image: url(images/rumYellow.svg);
-    background-repeat: no-repeat;
-    background-size: 45%;
+  background-image: url(images/rumYellow.svg);
+  background-repeat: no-repeat;
+  background-size: 45%;
 }
 
 #vodkaBottle {
-    background-image: url(images/vodkaYellow.svg);
-    background-repeat: no-repeat;
-    background-size: 23%;
+  background-image: url(images/vodkaYellow.svg);
+  background-repeat: no-repeat;
+  background-size: 23%;
 }
 
 #whiskeyBottle {
-    background-image: url(images/whiskeyYellow.svg);
-    background-repeat: no-repeat;
-    background-size: 35%;
+  background-image: url(images/whiskeyYellow.svg);
+  background-repeat: no-repeat;
+  background-size: 35%;
 }
 
 .swatches li {
-    margin-right: 5vw;
-    height: 15vw;
-    height: 20%;
+  margin-right: 5vw;
+  height: 15vw;
+  height: 20%;
 }
 
 .swatchgrid {
-    background-color: var(--darkgrey);
-    padding: 1rem;
+  background-color: var(--darkgrey);
+  padding: 1rem;
 }
 
 .swatchgrid li {
-    border: solid 1px rgba(0, 0, 0, 0.1);
+  border: solid 1px rgba(0, 0, 0, 0.1);
 }
 
 .color-swatch-1 {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .color-swatch-2 {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }
 
 .color-swatch-3 {
-    background-color: var(--red);
+  background-color: var(--red);
 }
 
 .color-swatch-4 {
-    background-color: var(--offwhite);
-    border: solid 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--offwhite);
+  border: solid 1px rgba(0, 0, 0, 0.1);
 }
 
 .color-swatch-5 {
-    background-color: var(--darkgreen);
+  background-color: var(--darkgreen);
 }
 
 .textures li {
-    height: 30vw;
-    height: 40%;
-    margin-right: 5vw;
+  height: 30vw;
+  height: 40%;
+  margin-right: 5vw;
 }
 
 .texture-swatch-1 {
-    background: url(images/glass.jpg) top left repeat;
-    background-size: cover;
+  background: url(images/glass.jpg) top left repeat;
+  background-size: cover;
 }
 
 .texture-swatch-2 {
-    background: url(images/wood.jpg) top left repeat;
-    background-size: cover;
+  background: url(images/wood.jpg) top left repeat;
+  background-size: cover;
 }
 
 .texture-swatch-3 {
-    background: url(images/stone.jpg) top left repeat;
-    background-size: cover;
+  background: url(images/stone.jpg) top left repeat;
+  background-size: cover;
 }
 
 .images ul {
-    flex-direction: column;
-    text-align: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .images li {
-    display: block;
-    /*margin-right: 5vw;*/
-    margin-bottom: 1rem;
+  display: block;
+  /*margin-right: 5vw;*/
+  margin-bottom: 1rem;
 }
 
 button {
-    padding: 1rem;
-    /* border-radius: 2rem; */
-    background: var(--red);
-    text-align: center;
-    text-decoration: none;
-    font: bold 1.5em/1 var(--header-font);
-    letter-spacing: 1px;
-    color: var(--offwhite);
-    border: solid 1px var(--offwhite);
-    text-transform: uppercase;
-    text-shadow: -2px -2px 0px var(--red);
-    transition: all 0.2s ease;
-    cursor: pointer;
-    margin: 0 auto 1rem auto;
-    padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem;
+  /* border-radius: 2rem; */
+  background: var(--red);
+  text-align: center;
+  text-decoration: none;
+  font: bold 1.5em/1 var(--header-font);
+  letter-spacing: 1px;
+  color: var(--offwhite);
+  border: solid 1px var(--offwhite);
+  text-transform: uppercase;
+  text-shadow: -2px -2px 0px var(--red);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: 0 auto 1rem auto;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 .secondary-button {
-    border: solid 1px var(--offwhite);
-    background: none;
+  border: solid 1px var(--offwhite);
+  background: none;
 }
 
 button:focus,
 button:active,
 button:focus-within {
-    outline: 0;
-    /* border-radius: 4px; */
+  outline: 0;
+  /* border-radius: 4px; */
 }
 
 .typography-main {
-    color: var(--offwhite);
+  color: var(--offwhite);
 }
 
 .h1-sample {
-    font-family: var(--header-font);
-    /* text-transform: uppercase; */
-    font-size: 2.4rem;
-    font-weight: bold;
-    /* border: solid 1px var(--offwhite); */
-    padding: 1rem;
-    color: var(--yellow);
-    background-color: var(--darkgreen);
-    /* background-color: var(--darkgrey); */
+  font-family: var(--header-font);
+  /* text-transform: uppercase; */
+  font-size: 2.4rem;
+  font-weight: bold;
+  /* border: solid 1px var(--offwhite); */
+  padding: 1rem;
+  color: var(--yellow);
+  background-color: var(--darkgreen);
+  /* background-color: var(--darkgrey); */
 }
 
 .h2-sample {
-    font-family: var(--subheader-font);
-    font-size: 1.8rem;
-    font-weight: 400;
-    border-bottom: solid 1px var(--darkgrey);
-    border-left: solid 1px var(--darkgrey);
-    margin-right: 20%;
-    color: var(--offwhite);
-    /* color: var(--offwhite); */
-    padding: 1rem;
+  font-family: var(--subheader-font);
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: solid 1px var(--darkgrey);
+  border-left: solid 1px var(--darkgrey);
+  margin-right: 20%;
+  color: var(--offwhite);
+  /* color: var(--offwhite); */
+  padding: 1rem;
 }
 
 .centeredH {
-    font-family: var(--header-font);
-    text-align: center;
-    font-size: 2.4rem;
-    padding: 1rem;
-    color: var(--yellow);
-    margin-left: auto;
-    margin-right: auto;
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1rem;
+  color: var(--yellow);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p.spiritName {
-    font-family: var(--header-font);
-    color: var(--offwhite);
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 0;
-    border-bottom: solid 1px var(--yellow);
-    padding-bottom: .5rem;
-    border-radius: 2px;
-    margin-right: 3vw;
-    margin-left: 3vw;
+  font-family: var(--header-font);
+  color: var(--offwhite);
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  border-bottom: solid 1px var(--yellow);
+  padding-bottom: 0.5rem;
+  border-radius: 2px;
+  margin-right: 3vw;
+  margin-left: 3vw;
 }
 
 p.typography-sample {
-    font-family: var(--body-font);
-    color: var(--offwhite);
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 1.5;
-    max-height: 960px;
-    padding: 1rem;
-    border-left: solid 1px var(--red);
-    /* background-color: var(--darkgrey); */
-    /* background-color: lightgrey; */
-    /* background-color: #2626260e; */
-    /* border-radius: 1rem; */
+  font-family: var(--body-font);
+  color: var(--offwhite);
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.5;
+  max-height: 960px;
+  padding: 1rem;
+  border-left: solid 1px var(--red);
+  /* background-color: var(--darkgrey); */
+  /* background-color: lightgrey; */
+  /* background-color: #2626260e; */
+  /* border-radius: 1rem; */
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 a {
-    font-family: var(--body-font);
-    color: var(--yellow);
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-decoration: none;
-    transition: all 0.2s;
+  font-family: var(--body-font);
+  color: var(--yellow);
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
 p[class*="font-details-"] {
-    margin-top: 0.8rem;
-    margin-left: 0.8rem;
-    margin-bottom: calc(2 * var(--white-space));
-    font-size: 1rem;
-    font-family: var(--body-font);
-    font-weight: 400;
-    color: var(--off-white);
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+  margin-bottom: calc(2 * var(--white-space));
+  font-size: 1rem;
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: var(--off-white);
 }
 
 .adjectives ul {
-    font-size: 1.5rem;
-    font-family: var(--accent-font);
+  font-size: 1.5rem;
+  font-family: var(--accent-font);
 }
 
 .adjectives ul {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .adjectives ul ::before {
-    content: "• ";
+  content: "• ";
 }
 
 footer {
-    font-style: italic;
-    font-family: var(--body-font);
-    font-weight: 200;
+  font-style: italic;
+  font-family: var(--body-font);
+  font-weight: 200;
 }
 
 @media (min-height: 800px) {
-    #main_styletile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 4rem;
-    }
-    .swatches li {
-        margin-right: 3%;
-        height: 10vw;
-        height: 20%;
-    }
-    .textures li {
-        height: 15vw;
-    }
-    /**Recipe list**/
-    #recipe_list {
-        display: grid;
-        grid-gap: 2.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
+  #main_styletile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+  .swatches li {
+    margin-right: 3%;
+    height: 10vw;
+    height: 20%;
+  }
+  .textures li {
+    height: 15vw;
+  }
+  /**Recipe list**/
+  #recipe_list {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 @media (min-height: 900px) {
-    .adjectives ul {
-        flex-direction: row;
-    }
+  .adjectives ul {
+    flex-direction: row;
+  }
 }
 
 .adjectives ul {
-    flex-direction: row;
+  flex-direction: row;
 }
-
 
 /**Make your own**/
 
 .makeyourown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ingredient_list label {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  cursor: pointer;
 }
 
 .click_list button {
-    margin: 3rem auto 3rem auto;
-    display: flex;
-    align-items: center;
+  margin: 3rem auto 3rem auto;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-height: 700px) {
-    .ingredient_list label {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .ingredient_list label {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (min-height: 900px) {
-    .ingredient_list label {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-    }
+  .ingredient_list label {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
