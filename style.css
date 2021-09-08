@@ -47,6 +47,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: var(--header-font);
+}
+
 button {
   transition: all 3s;
 }
