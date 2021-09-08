@@ -30,29 +30,27 @@ fetch(url, options)
 
 //fetch data
 
-//comment out while styling
+fetch("https://cocktails-240e.restdb.io/rest/recipes")
+  .then((res) => res.json())
+  .then(gotData);
 
-// fetch("https://cocktails-240e.restdb.io/rest/recipes")
-//   .then((res) => res.json())
-//   .then(gotData);
+//
+function gotData(data) {
+  data.forEach(showRecipe);
+}
 
-// //
-// function gotData(data) {
-//   data.forEach(showRecipe);
-// }
+function showRecipe(recipe) {
+  const template = document.querySelector(".recipelist_template").content;
+  const copy = template.cloneNode(true);
 
-// function showRecipe(recipe) {
-//   const template = document.querySelector(".recipelist_template").content;
-//   const copy = template.cloneNode(true);
+  copy.querySelector(
+    "img"
+  ).src = `http://www.kea.paufiaschi.com/2sem/cocktails/${recipes._id}.jpeg`;
+  copy.querySelector("img").alt = recipe.name;
+  copy.querySelector("h2").textContent = recipes.name;
+  copy.querySelector("a").href = `productpage.html?recipe=${recipe.name}`;
 
-//   copy.querySelector(
-//     "img"
-//   ).src = `http://www.kea.paufiaschi.com/2sem/cocktails/${recipes._id}.jpeg`;
-//   copy.querySelector("img").alt = recipe.name;
-//   copy.querySelector("h2").textContent = recipes.name;
-//   copy.querySelector("a").href = `productpage.html?recipe=${recipe.name}`;
-
-//   const topParent = document.querySelector(".recipe_idea");
-//   const elemParent = topParent.querySelector("a");
-//   elemParent.appendChild(copy);
-// }
+  const topParent = document.querySelector(".recipe_idea");
+  const elemParent = topParent.querySelector("a");
+  elemParent.appendChild(copy);
+}
