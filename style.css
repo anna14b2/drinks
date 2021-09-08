@@ -235,7 +235,7 @@ button {
   text-shadow: -2px -2px 0px var(--red);
   transition: all 0.2s ease;
   cursor: pointer;
-  margin: 0 1rem 1rem 0;
+  margin: 0 auto 1rem auto;
   padding: 1rem 2rem 1rem 2rem;
 }
 
@@ -368,7 +368,12 @@ footer {
   }
 }
 
+.adjectives ul {
+  flex-direction: row;
+}
+
 /**Make your own**/
+
 .makeyourown {
   display: flex;
   flex-direction: column;
@@ -380,10 +385,12 @@ footer {
   gap: 2rem;
   cursor: pointer;
 }
+
 .click_list button {
-  margin: 3rem auto 3rem auto;
+  margin: 3rem;
   display: flex;
   align-items: center;
+  justify-self: center;
 }
 
 @media (min-width: 700px) {
