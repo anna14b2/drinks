@@ -368,9 +368,28 @@ footer {
     flex-direction: row;
   }
 }
+
 /**Make your own**/
 .makeyourown {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+}
+.ingredient_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  cursor: pointer;
+}
+.click_list button {
+  margin: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .ingredient_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
