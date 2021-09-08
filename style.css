@@ -46,6 +46,10 @@
     --body-font: "Josefin Sans", sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 button {
     transition: all 3s;
 }
@@ -155,8 +159,15 @@ ul {
 ul.spirits {
     /* background-color: var(--darkgrey); */
     /* display: flex; */
-    justify-content: space-around;
-    flex-wrap: wrap;
+    /* justify-content: space-around;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.bottleName>* {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bottleName div {
@@ -165,54 +176,40 @@ ul.spirits {
     border-radius: 3px;
 }
 
+.bottleName div {
+    min-height: 18vw;
+    max-width: 15vw;
+    background-position: center;
+}
+
 #ginBottle {
     background-image: url(images/ginYellow.svg);
     background-repeat: no-repeat;
-    background-size: 40%;
-    min-height: 18vw;
-    min-width: 15vw;
-    background-position: center;
-    padding: 2rem 0 2rem 0;
+    background-size: 30%;
 }
 
 #rumBottle {
     background-image: url(images/rumYellow.svg);
     background-repeat: no-repeat;
-    background-size: 60%;
-    min-height: 18vw;
-    min-width: 15vw;
-    background-position: center;
-    padding: 2rem 0 2rem 0;
+    background-size: 45%;
 }
 
 #vodkaBottle {
     background-image: url(images/vodkaYellow.svg);
     background-repeat: no-repeat;
-    background-size: 30%;
-    min-height: 18vw;
-    min-width: 15vw;
-    background-position: center;
-    padding: 2rem 0 2rem 0;
+    background-size: 23%;
 }
 
 #whiskeyBottle {
     background-image: url(images/whiskeyYellow.svg);
     background-repeat: no-repeat;
-    background-size: 50%;
-    min-height: 18vw;
-    min-width: 15vw;
-    background-position: center;
-    padding: 2rem 0 2rem 0;
+    background-size: 35%;
 }
 
 .swatches li {
     margin-right: 5vw;
     height: 15vw;
     height: 20%;
-}
-
-ul li:last-child {
-    margin-right: 0;
 }
 
 .swatchgrid {
