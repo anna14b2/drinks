@@ -74,14 +74,14 @@ html {
 }
 
 img {
-    max-width: 100%;
+    max-height: 100%;
     height: auto;
 }
 
 header,
 main,
 footer {
-    max-width: 1300px;
+    max-height: 1300px;
     margin: 0 auto;
     padding: calc(2 * var(--white-space));
 }
@@ -90,10 +90,10 @@ body {
     background-color: var(--blackish);
 }
 
-.full-width {
+.full-height {
     background: var(--darkgrey);
     color: var(--offwhite);
-    width: 100%;
+    height: 100%;
 }
 
 .header-wrapper h1 {
@@ -155,10 +155,40 @@ ul {
 
 /* ul.spirits {} */
 
+#ginBottle {
+    background-image: url(images/ginYellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 10rem;
+    min-width: 10rem;
+}
+
+#rumBottle {
+    background-image: url(images/rumYellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 10rem;
+    min-width: 10rem;
+}
+
+#vodkaBottle {
+    background-image: url(images/vodkaYellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 10rem;
+}
+
+#whiskeyBottle {
+    background-image: url(images/whiskeyYellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 10rem;
+}
+
 .swatches li {
     margin-right: 5vw;
     height: 15vw;
-    width: 20%;
+    height: 20%;
 }
 
 ul li:last-child {
@@ -197,7 +227,7 @@ ul li:last-child {
 
 .textures li {
     height: 30vw;
-    width: 40%;
+    height: 40%;
     margin-right: 5vw;
 }
 
@@ -291,7 +321,7 @@ p.typography-sample {
     font-size: 1.5rem;
     font-weight: 100;
     line-height: 1.5;
-    max-width: 960px;
+    max-height: 960px;
     padding: 1rem;
     border-left: solid 1px var(--red);
     /* background-color: var(--darkgrey); */
@@ -346,7 +376,7 @@ footer {
     font-weight: 200;
 }
 
-@media (min-width: 800px) {
+@media (min-height: 800px) {
     #main_styletile {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -355,7 +385,7 @@ footer {
     .swatches li {
         margin-right: 3%;
         height: 10vw;
-        width: 20%;
+        height: 20%;
     }
     .textures li {
         height: 15vw;
@@ -368,7 +398,7 @@ footer {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-height: 900px) {
     .adjectives ul {
         flex-direction: row;
     }
@@ -400,14 +430,14 @@ footer {
     align-items: center;
 }
 
-@media (min-width: 700px) {
+@media (min-height: 700px) {
     .ingredient_list label {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (min-width: 900px) {
+@media (min-height: 900px) {
     .ingredient_list label {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
