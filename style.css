@@ -152,7 +152,8 @@ ul {
     list-style: none;
 }
 
-.galleryItem {}
+
+/* ul.spirits {} */
 
 .swatches li {
     margin-right: 5vw;
