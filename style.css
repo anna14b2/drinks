@@ -238,7 +238,7 @@ button {
     text-shadow: -2px -2px 0px var(--red);
     transition: all 0.2s ease;
     cursor: pointer;
-    margin: 0 1rem 1rem 0;
+    margin: 0 auto 1rem auto;
     padding: 1rem 2rem 1rem 2rem;
 }
 
@@ -370,32 +370,35 @@ footer {
         flex-direction: row;
     }
 }
-  .adjectives ul {
+
+.adjectives ul {
     flex-direction: row;
-  }
+}
+
+
 }
 
 /**Make your own**/
 .makeyourown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .ingredient_list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    cursor: pointer;
 }
 .click_list button {
-  margin: 3rem;
-  display: flex;
-  align-items: center;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
 }
-
 @media (min-width: 800px) {
-  .ingredient_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+    .ingredient_list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
