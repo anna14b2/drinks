@@ -152,37 +152,57 @@ ul {
     list-style: none;
 }
 
+ul.spirits {
+    /* background-color: var(--darkgrey); */
+    /* display: flex; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-/* ul.spirits {} */
+.bottleName div {
+    background-color: var(--darkgrey);
+    border: solid 10px var(--red);
+    border-radius: 3px;
+}
 
 #ginBottle {
     background-image: url(images/ginYellow.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 10rem;
-    min-width: 10rem;
+    background-size: 40%;
+    min-height: 18vw;
+    min-width: 15vw;
+    background-position: center;
+    padding: 2rem 0 2rem 0;
 }
 
 #rumBottle {
     background-image: url(images/rumYellow.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 10rem;
-    min-width: 10rem;
+    background-size: 60%;
+    min-height: 18vw;
+    min-width: 15vw;
+    background-position: center;
+    padding: 2rem 0 2rem 0;
 }
 
 #vodkaBottle {
     background-image: url(images/vodkaYellow.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 10rem;
+    background-size: 30%;
+    min-height: 18vw;
+    min-width: 15vw;
+    background-position: center;
+    padding: 2rem 0 2rem 0;
 }
 
 #whiskeyBottle {
     background-image: url(images/whiskeyYellow.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 10rem;
+    background-size: 50%;
+    min-height: 18vw;
+    min-width: 15vw;
+    background-position: center;
+    padding: 2rem 0 2rem 0;
 }
 
 .swatches li {
@@ -313,6 +333,25 @@ button:focus-within {
     color: var(--offwhite);
     /* color: var(--offwhite); */
     padding: 1rem;
+}
+
+.centeredH {
+    font-family: var(--header-font);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 1rem;
+    color: var(--yellow);
+}
+
+p.spiritName {
+    font-family: var(--header-font);
+    color: var(--offwhite);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    border-bottom: solid 1px var(--yellow);
+    padding-bottom: .5rem;
+    border-radius: 5px;
 }
 
 p.typography-sample {
