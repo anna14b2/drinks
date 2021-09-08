@@ -381,7 +381,7 @@ footer {
   cursor: pointer;
 }
 .click_list button {
-  margin: 3rem;
+  margin: 3rem auto 3rem auto;
   display: flex;
   align-items: center;
 }
