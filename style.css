@@ -26,7 +26,7 @@
 /* font-family: 'Liu Jian Mao Cao', cursive; */
 
 :root {
-    --blackish: #252621;
+    --darkgreen: #252621;
     --green: #403e22;
     --yellow: #bf9e39;
     --orange: #8c4e03;
@@ -91,7 +91,7 @@ footer {
 }
 
 body {
-    background-color: var(--blackish);
+    background-color: var(--darkgreen);
 }
 
 .full-height {
@@ -242,7 +242,7 @@ ul.spirits {
 }
 
 .color-swatch-5 {
-    background-color: var(--blackish);
+    background-color: var(--darkgreen);
 }
 
 .textures li {
