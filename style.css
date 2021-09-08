@@ -280,33 +280,23 @@ ul.spirits {
 
 .color-swatch-1 {
   background-color: var(--green);
-  height: 10vw;
-  width: 10vw;
 }
 
 .color-swatch-2 {
   background-color: var(--yellow);
-  height: 10vw;
-  width: 10vw;
 }
 
 .color-swatch-3 {
   background-color: var(--red);
-  height: 10vw;
-  width: 10vw;
 }
 
 .color-swatch-4 {
   background-color: var(--offwhite);
   border: solid 1px rgba(0, 0, 0, 0.1);
-  height: 10vw;
-  width: 10vw;
 }
 
 .color-swatch-5 {
   background-color: var(--darkgreen);
-  height: 10vw;
-  width: 10vw;
 }
 
 .textures li {
