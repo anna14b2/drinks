@@ -152,6 +152,8 @@ ul {
     list-style: none;
 }
 
+.galleryItem {}
+
 .swatches li {
     margin-right: 5vw;
     height: 15vw;
