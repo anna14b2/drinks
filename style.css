@@ -82,12 +82,32 @@ img {
     height: auto;
 }
 
-header,
+
+/*What does this really do? */
+
+
+/* header,
 main,
 footer {
     max-height: 1300px;
     margin: 0 auto;
     padding: calc(2 * var(--white-space));
+} */
+
+nav {
+    background-color: var(--darkgrey);
+    padding: .5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: var(--offwhite);
+    font-size: 1.8rem;
+    font-weight: 100;
 }
 
 body {
@@ -136,6 +156,32 @@ main {
 
 section {
     margin-bottom: calc(4 * var(--white-space));
+}
+
+.heroImage {
+    text-align: center;
+    margin: 4rem auto 4rem auto;
+}
+
+.heroImage>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blurbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-left: 8rem;
+    margin-right: 8rem;
+    gap: 2rem;
+}
+
+.blurbs p {
+    font-family: var(--body-font);
+    color: var(--offwhite);
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.5;
 }
 
 .section-heading {
@@ -437,7 +483,7 @@ footer {
     #recipe_list {
         display: grid;
         grid-gap: 2.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
 }
 
