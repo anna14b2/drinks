@@ -267,6 +267,8 @@ ul.spirits {
 
 .swatches li {
   margin-right: 3%;
+  height: 10vw;
+  width: 20%;
 }
 
 .swatchgrid {
@@ -473,16 +475,16 @@ footer {
   font-weight: 200;
 }
 
-@media (min-height: 800px) {
+@media (min-width: 800px) {
   #main_styletile {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
   }
   .swatches li {
-    margin-right: 3%;
+    margin: 0.5rem;
     height: 10vw;
-    height: 20%;
+    width: 20%;
   }
   .textures li {
     height: 15vw;
@@ -495,7 +497,7 @@ footer {
   }
 }
 
-@media (min-height: 900px) {
+@media (min-width: 900px) {
   .adjectives ul {
     flex-direction: row;
   }
@@ -526,14 +528,14 @@ footer {
   align-items: center;
 }
 
-@media (min-height: 700px) {
+@media (min-width: 700px) {
   .ingredient_list label {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (min-height: 900px) {
+@media (min-width: 900px) {
   .ingredient_list label {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
