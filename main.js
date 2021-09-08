@@ -29,7 +29,6 @@ fetch(url, options)
 //Code for recipe list
 
 //fetch data
-
 fetch("https://cocktails-240e.restdb.io/rest/recipes")
   .then((res) => res.json())
   .then(gotData);
