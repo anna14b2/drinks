@@ -368,3 +368,9 @@ footer {
     flex-direction: row;
   }
 }
+/**Make your own**/
+.makeyourown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
