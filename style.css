@@ -148,7 +148,7 @@ section {
 ul {
     display: flex;
     justify-content: space-between;
-    color: var(--offwhite);
+    /* color: var(--offwhite); */
     list-style: none;
 }
 
