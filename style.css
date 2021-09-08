@@ -49,6 +49,8 @@
 
 h1 {
   font-family: var(--header-font);
+  color: var(--yellow);
+  font-size: 3rem;
 }
 
 button {
@@ -122,15 +124,15 @@ body {
   height: 100%;
 }
 
-.header-wrapper h1 {
+/* .header-wrapper h1 {
   font-size: 3rem;
   /* font-weight: medium; */
-  /* color: var(--offwhite); */
-  color: var(--yellow);
+/* color: var(--offwhite); */
+/* color: var(--yellow);
   font-family: var(--header-font);
-}
+} */
 
-.header-wrapper h2 {
+*/ .header-wrapper h2 {
   font-size: 1.8em;
   color: var(--offwhite);
   font-weight: medium;
