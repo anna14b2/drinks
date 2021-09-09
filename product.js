@@ -1,8 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
-console.log(id);
+const cocktail = urlParams.get("cocktail");
+console.log(cocktail);
 
-const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"_id" : {"$in" : ["${id}"]}}`;
+const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"Name" : {"$in" : ["${cocktail}"]}}`;
 console.log(url);
 
 // The API key
@@ -16,15 +16,26 @@ fetch(url, options)
   .then((res) => res.json())
   .then((data) => showCocktail(data));
 
+function getProductRecipe(drink) {
+  drink.forEach(showCocktail);
+}
+
 // populate the page
 
-function showCocktail(cocktail) {
-  console.log(cocktail);
+function showCocktail(dr) {
+  // console.log(dr[0]);
 
-  document.querySelector("h1").textContent = cocktail.Name;
-  console.log(cocktail.Name);
-  document.querySelector(".ingredients").textContent = cocktail.Ingredients;
-  document.querySelector(".instructions").textContent = cocktail.Recipe;
-  document.querySelector("img").setAttribute("src", cocktail.img);
-  document.querySelector("img").setAttribute("alt", cocktail.Name + "picture");
+  const product = dr[0];
+  // console.log(product);
+
+  document.querySelector("h1").textContent = product.Name;
+  console.log(product.Name);
+
+  document.querySelector(".ingredients").innerHTML =
+    "<p>" + product.Ingredients + "</p>";
+  document.querySelector(".instructions").innerHTML =
+    "<p>" + product.Recipe + "<p>";
+
+  document.querySelector("img").setAttribute("src", product.img);
+  document.querySelector("img").setAttribute("alt", product.Name + "picture");
 }

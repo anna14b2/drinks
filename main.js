@@ -2,6 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const spirit = urlParams.get("spirit");
 console.log(spirit);
 
+// This is the end point filtered by spirit, which is what we are using as categories / It is defined by restdb
 const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"Spirit" : {"$in" : ["${spirit}"]}}`;
 console.log(url);
 
@@ -28,8 +29,6 @@ fetch(url, options)
     console.error("An error occured:", e.message);
   });
 
-// The code above is copied from the slides restdb.io (slide 34) how to fetch.
-
 //Code for recipes list
 
 //loop
@@ -38,8 +37,8 @@ function getProductList(drink) {
 }
 
 function showRecipe(recipe) {
-  console.log(recipe);
-  console.log(recipe.img);
+  // console.log(recipe);
+  // console.log(recipe.img);
 
   // create templates
   const template = document.querySelector("#recipelist_template").content;
@@ -50,8 +49,8 @@ function showRecipe(recipe) {
   // make the product page match the recipe clicked
   copy
     .querySelector("a")
-    .setAttribute("href", "productpage.html?id=" + recipe._id);
-  console.log(recipe._id);
+    .setAttribute("href", "productpage.html?cocktail=" + recipe.Name);
+  console.log(recipe.Name);
 
   // change dinamic data
 

@@ -533,6 +533,10 @@ footer {
   gap: 2rem;
   cursor: pointer;
 }
+.ingredients p {
+  font-size: 1.5rem;
+  font-family: "Liu Jian Mao Cao", cursive !important;
+}
 
 .click_list button {
   margin: 3rem auto 3rem auto;
