@@ -554,14 +554,14 @@ footer {
 }
 
 /**Style productpage*/
+.h1_drinkname {
+  display: flex;
+  place-content: center;
+}
 
 @media (min-width: 700px) {
   #drink_recipe {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  #h1_drinkname {
-    display: flex;
-    align-self: center;
   }
 }
