@@ -47,6 +47,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: var(--header-font);
+  color: var(--yellow);
+  font-size: 3rem;
+}
+
 a {
   transition: all 3s;
 }
@@ -554,14 +560,14 @@ footer {
 }
 
 /**Style productpage*/
+.h1_drinkname {
+  display: flex;
+  place-content: center;
+}
 
 @media (min-width: 700px) {
   #drink_recipe {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  #h1_drinkname {
-    display: flex;
-    align-self: center;
   }
 }
