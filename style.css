@@ -50,7 +50,6 @@
 h1 {
   font-family: var(--header-font);
   color: var(--yellow);
-  font-size: 3rem;
 }
 
 a {
@@ -565,16 +564,34 @@ footer {
   place-content: center;
 }
 
+#drink_recipe h2 {
+  font-family: var(--header-font);
+  color: var(--yellow);
+}
+
+#drink_recipe img {
+  padding: 3rem;
+}
+
 .recipe {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 3rem;
+  justify-content: center;
 }
 
 @media (min-width: 700px) {
   #drink_recipe {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0rem 10 0rem 10;
+  }
+  .funFact {
+    padding: 0 6rem 0 6rem;
+  }
+  .recipe {
+    padding: 0 2rem 0 2rem;
+  }
+  h1 {
+    font-size: 3rem;
   }
 }
