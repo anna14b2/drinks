@@ -565,6 +565,13 @@ footer {
   place-content: center;
 }
 
+.recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
 @media (min-width: 700px) {
   #drink_recipe {
     display: grid;
