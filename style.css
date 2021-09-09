@@ -559,6 +559,18 @@ footer {
 }
 
 /**Style productpage*/
+#drink_recipe li {
+  font-family: var(--accent-font);
+  color: var(--offwhite);
+  line-height: 3rem;
+}
+
+#drink_recipe p {
+  font-family: var(--subheader-font);
+  color: var(--offwhite);
+  line-height: 2rem;
+}
+
 .h1_drinkname {
   display: flex;
   place-content: center;
@@ -570,7 +582,7 @@ footer {
 }
 
 #drink_recipe img {
-  padding: 3rem;
+  padding: 2.5rem;
 }
 
 .recipe {
