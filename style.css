@@ -139,6 +139,12 @@ body {
     height: 100%;
 }
 
+.full-width {
+    background: var(--darkgrey);
+    color: var(--offwhite);
+    width: 100%;
+}
+
 .header-wrapper h1 {
     font-size: 3rem;
     /* font-weight: medium; */
