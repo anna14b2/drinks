@@ -22,7 +22,6 @@ fetch(url, options)
   })
   .then((data) => {
     // we have the data
-    // console.log(data);
     getProductList(data);
   })
   .catch((e) => {
@@ -40,8 +39,8 @@ function getProductList(drink) {
 }
 
 function showRecipe(recipe) {
-  // console.log(recipe);
-  // console.log(recipe.img);
+  console.log(recipe);
+  console.log(recipe.img);
 
   // create templates
   const template = document.querySelector("#recipelist_template").content;
