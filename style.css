@@ -483,6 +483,10 @@ footer {
   font-weight: 200;
 }
 
+.spirit-header {
+  grid-column: 1/-1;
+}
+
 @media (min-width: 800px) {
   #main_styletile {
     display: grid;

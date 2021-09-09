@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const spirit = urlParams.get("spirit");
 console.log(spirit);
 
-// This is the end point filtered by spirit, which is what we are using as categories / It is defined by restdb
+// This is the end point filtered by spirit, which is what we are using as categories / The sintax is defined by restdb
 const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"Spirit" : {"$in" : ["${spirit}"]}}`;
 console.log(url);
 
@@ -53,6 +53,7 @@ function showRecipe(recipe) {
   // console.log(recipe.Name);
 
   // change dinamic data
+  document.querySelector(".spirit-header").textContent = spirit;
   copy.querySelector("h3").textContent = recipe.Name;
   copy.querySelector("img").setAttribute("src", recipe.img);
   copy.querySelector("img").setAttribute("alt", recipe.Name + "picture");
