@@ -226,6 +226,11 @@ footer {
         margin-right: auto;
     }
     
+    .bottleName:hover {
+        transition: all .2s ease;
+        transform: scale(1.02);
+    }
+    
     .bottleName div {
         background-color: var(--darkgrey);
         border: solid 10px var(--red);
