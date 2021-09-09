@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const spirit = urlParams.get("spirit");
 
-const url = "https://cocktails-240e.restdb.io/rest/recipes?spirit=" + spirit;
+const url = "https://cocktails-240e.restdb.io/rest/recipes?Spirit=" + spirit;
 
 // The API key
 const options = {
@@ -37,8 +37,8 @@ function getProductList(drink) {
 }
 
 function showRecipe(recipe) {
-  console.log(recipe);
-  console.log(recipe.img);
+  // console.log(recipe);
+  // console.log(recipe.img);
 
   // create templates
   const template = document.querySelector("#recipelist_template").content;
@@ -46,10 +46,17 @@ function showRecipe(recipe) {
   // clone the template
   const copy = template.cloneNode(true);
 
+  // make the product page match the recipe clicked
+  copy
+    .querySelector("a")
+    .setAttribute("href", "productpage.html?id=" + recipe._id);
+  console.log(recipe._id);
+
   // change dinamic data
 
   copy.querySelector("h3").textContent = recipe.Name;
   copy.querySelector("img").setAttribute("src", recipe.img);
+  copy.querySelector("img").setAttribute("alt", recipe.Name + "picture");
 
   const elemParent = document.querySelector("main");
   elemParent.appendChild(copy);
