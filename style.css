@@ -100,22 +100,17 @@ body {
 
 /*What does this really do? */
 
-
-/* header,
+header,
 main,
 footer {
     max-height: 1300px;
     margin: 0 auto;
     padding: calc(2 * var(--white-space));
-} */
+}
 
 nav {
     background-color: var(--darkgrey);
     padding: 0.5rem;
-}
-
-header {
-    margin-top: -1;
 }
 
 nav ul {
@@ -143,6 +138,8 @@ body {
     background: var(--darkgrey);
     color: var(--offwhite);
     width: 100%;
+    padding-left: 3vw;
+    padding-bottom: 1vw;
 }
 
 .header-wrapper h1 {
@@ -288,7 +285,7 @@ ul.spirits {
 .swatches li {
     margin-right: 5vw;
     height: 15vw;
-    height: 20%;
+    width: 20%;
 }
 
 .swatchgrid {
