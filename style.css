@@ -218,7 +218,7 @@ ul {
 
 ul.spirits {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
 
@@ -612,5 +612,15 @@ footer {
   }
   #drink_recipe img {
     padding: 5rem;
+  }
+
+  /*Home page*/
+
+  .homePage {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+  }
+  .homePage > section {
+    grid-column: 2/3;
   }
 }
