@@ -46,18 +46,18 @@ function showRecipe(recipe) {
   // clone the template
   const copy = template.cloneNode(true);
 
-  // make the product page match the recipe clicked
+  // make the product page match the recipe we are gonna click
   copy
     .querySelector("a")
     .setAttribute("href", "productpage.html?cocktail=" + recipe.Name);
-  console.log(recipe.Name);
+  // console.log(recipe.Name);
 
   // change dinamic data
-
   copy.querySelector("h3").textContent = recipe.Name;
   copy.querySelector("img").setAttribute("src", recipe.img);
   copy.querySelector("img").setAttribute("alt", recipe.Name + "picture");
 
+  // append it to main
   const elemParent = document.querySelector("main");
   elemParent.appendChild(copy);
 }
