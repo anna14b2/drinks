@@ -50,16 +50,12 @@
     box-sizing: border-box;
 }
 
-button {
-    transition: all 3s;
-}
-
 a {
     transition: all 3s;
 }
 
 button:hover {
-    background-color: var(--orange);
+    filter: brightness(150%);
     transform: scale(1.05);
 }
 
@@ -95,17 +91,6 @@ body {
     width: auto;
     height: 8vw;
     margin-top: 6vw;
-}
-
-
-/*What does this really do? */
-
-header,
-main,
-footer {
-    max-height: 1300px;
-    margin: 0 auto;
-    padding: calc(2 * var(--white-space));
 }
 
 nav {
@@ -193,8 +178,8 @@ section {
 .blurbs {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 8vw;
+    margin-right: 8vw;
     gap: 4rem;
 }
 
@@ -288,6 +273,10 @@ ul.spirits {
     width: 20%;
 }
 
+.swatches li:last-child {
+    margin-right: 0;
+}
+
 .swatchgrid {
     background-color: var(--darkgrey);
     padding: 1rem;
@@ -320,7 +309,7 @@ ul.spirits {
 
 .textures li {
     height: 30vw;
-    height: 40%;
+    width: 40%;
     margin-right: 5vw;
 }
 
@@ -364,8 +353,8 @@ button {
     text-shadow: -2px -2px 0px var(--red);
     transition: all 0.2s ease;
     cursor: pointer;
-    margin: 0 auto 1rem auto;
-    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 2vw 1rem 2vw;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .secondary-button {
@@ -492,7 +481,7 @@ footer {
     font-weight: 200;
 }
 
-@media (min-height: 800px) {
+@media (min-width: 800px) {
     #main_styletile {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -500,7 +489,7 @@ footer {
     }
     .swatches li {
         margin-right: 3%;
-        height: 10vw;
+        min-height: 10vw;
         height: 20%;
     }
     .textures li {
@@ -518,15 +507,16 @@ footer {
     grid-column: 1/-1;
 }
 
-@media (min-height: 900px) {
+@media (min-width: 900px) {
     .adjectives ul {
         flex-direction: row;
     }
 }
 
-.adjectives ul {
+
+/* .adjectives ul {
     flex-direction: row;
-}
+} */
 
 
 /**Make your own**/
@@ -550,14 +540,14 @@ footer {
     align-items: center;
 }
 
-@media (min-height: 700px) {
+@media (min-width: 700px) {
     .ingredient_list label {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (min-height: 900px) {
+@media (min-width: 900px) {
     .ingredient_list label {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
