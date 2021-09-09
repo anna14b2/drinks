@@ -93,17 +93,6 @@ body {
     margin-top: 6vw;
 }
 
-
-/*What does this really do? */
-
-header,
-main,
-footer {
-    max-height: 1300px;
-    margin: 0 auto;
-    padding: calc(2 * var(--white-space));
-}
-
 nav {
     background-color: var(--darkgrey);
     padding: 0.5rem;
