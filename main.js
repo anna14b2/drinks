@@ -1,7 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const spirit = urlParams.get("spirit");
+console.log(spirit);
 
-const url = "https://cocktails-240e.restdb.io/rest/recipes?Spirit=" + spirit;
+const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"Spirit" : {"$in" : ["${spirit}"]}}`;
+console.log(url);
 
 // The API key
 const options = {
@@ -19,7 +21,6 @@ fetch(url, options)
   })
   .then((data) => {
     // we have the data
-    // console.log(data);
     getProductList(data);
   })
   .catch((e) => {
@@ -37,8 +38,8 @@ function getProductList(drink) {
 }
 
 function showRecipe(recipe) {
-  // console.log(recipe);
-  // console.log(recipe.img);
+  console.log(recipe);
+  console.log(recipe.img);
 
   // create templates
   const template = document.querySelector("#recipelist_template").content;
