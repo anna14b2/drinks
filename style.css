@@ -97,7 +97,7 @@ footer {
     
     nav {
         background-color: var(--darkgrey);
-        padding: .5rem;
+        padding: 0.5rem;
     }
     
     header {
@@ -224,11 +224,6 @@ footer {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-    }
-    
-    .bottleName:hover {
-        transition: all .2s ease;
-        transform: scale(1.02);
     }
     
     .bottleName div {
@@ -408,7 +403,7 @@ footer {
         font-size: 2rem;
         margin-top: 0;
         border-bottom: solid 1px var(--yellow);
-        padding-bottom: .5rem;
+        padding-bottom: 0.5rem;
         border-radius: 2px;
         margin-right: 3vw;
         margin-left: 3vw;
@@ -495,6 +490,10 @@ footer {
             grid-gap: 2.5rem;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         }
+    }
+    
+    #recipe_list h2 {
+        grid-column: 1/-1;
     }
     
     @media (min-height: 900px) {
