@@ -99,6 +99,10 @@ nav {
     padding: .5rem;
 }
 
+header {
+    margin-top: -1;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -531,4 +535,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
+}
+
+footer {
+    background-color: var(--darkgrey);
 }
