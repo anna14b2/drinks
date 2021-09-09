@@ -55,7 +55,7 @@ a {
 }
 
 button:hover {
-    background-color: var(--orange);
+    filter: brightness(150%);
     transform: scale(1.05);
 }
 
