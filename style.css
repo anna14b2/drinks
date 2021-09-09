@@ -581,10 +581,6 @@ footer {
   color: var(--yellow);
 }
 
-#drink_recipe img {
-  padding: 2.5rem;
-}
-
 .recipe {
   display: flex;
   flex-direction: column;
@@ -605,5 +601,8 @@ footer {
   }
   h1 {
     font-size: 3rem;
+  }
+  #drink_recipe img {
+    padding: 2.5rem;
   }
 }
