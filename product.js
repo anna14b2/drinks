@@ -1,10 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+console.log(id);
 
-const url =
-  "https://cocktails-240e.restdb.io/rest/recipes?q={%22_id%22%20:%20{%22$in%22%20:%20[%22" +
-  id +
-  "%22]}}";
+const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"_id" : {"$in" : ["${id}"]}}`;
+console.log(url);
 
 // The API key
 const options = {
@@ -22,8 +21,9 @@ function showCocktail(cocktail) {
   console.log(cocktail);
 
   document.querySelector("h1").textContent = cocktail.Name;
+  console.log(cocktail.Name);
   document.querySelector(".ingredients").textContent = cocktail.Ingredients;
   document.querySelector(".instructions").textContent = cocktail.Recipe;
-  copy.querySelector("img").setAttribute("src", cocktail.img);
-  copy.querySelector("img").setAttribute("alt", cocktail.Name + "picture");
+  document.querySelector("img").setAttribute("src", cocktail.img);
+  document.querySelector("img").setAttribute("alt", cocktail.Name + "picture");
 }

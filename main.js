@@ -2,11 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const spirit = urlParams.get("spirit");
 console.log(spirit);
 
-// const spirit = myQ.slice(22);
-// console.log(spirit);
-// 'https://cocktails-240e.restdb.io/rest/recipes?q={"Spirit" : {"$in" : ["Gin"]}}'
-// 'https://cocktails-240e.restdb.io/rest/recipes?q={"Spirit" : {"$in" : ["Gin"]}}'
-const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"Spirit" : {"$in" : ["${spirit}}"]}}`;
+const url = `https://cocktails-240e.restdb.io/rest/recipes?q={"Spirit" : {"$in" : ["${spirit}"]}}`;
 console.log(url);
 
 // The API key
@@ -52,14 +48,9 @@ function showRecipe(recipe) {
   const copy = template.cloneNode(true);
 
   // make the product page match the recipe clicked
-  // copy
-  //   .querySelector("a")
-  //   .setAttribute(
-  //     "href",
-  //     "productpage.html?q={%22_id%22%20:%20{%22$in%22%20:%20[%22" +
-  //       recipe._id +
-  //       "%22]}}"
-  //   );
+  copy
+    .querySelector("a")
+    .setAttribute("href", "productpage.html?id=" + recipe._id);
   console.log(recipe._id);
 
   // change dinamic data
