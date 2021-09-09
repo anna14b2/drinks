@@ -50,10 +50,6 @@
     box-sizing: border-box;
 }
 
-button {
-    transition: all 3s;
-}
-
 a {
     transition: all 3s;
 }
@@ -368,8 +364,8 @@ button {
     text-shadow: -2px -2px 0px var(--red);
     transition: all 0.2s ease;
     cursor: pointer;
-    margin: 0 auto 1rem auto;
-    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 2vw 1rem 2vw;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .secondary-button {
