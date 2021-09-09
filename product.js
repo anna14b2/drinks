@@ -20,4 +20,10 @@ fetch(url, options)
 
 function showCocktail(cocktail) {
   console.log(cocktail);
+
+  document.querySelector("h1").textContent = cocktail.Name;
+  document.querySelector(".ingredients").textContent = cocktail.Ingredients;
+  document.querySelector(".instructions").textContent = cocktail.Recipe;
+  copy.querySelector("img").setAttribute("src", cocktail.img);
+  copy.querySelector("img").setAttribute("alt", cocktail.Name + "picture");
 }
