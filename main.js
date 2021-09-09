@@ -1,4 +1,7 @@
-const url = "https://cocktails-240e.restdb.io/rest/recipes";
+const urlParams = new URLSearchParams(window.location.search);
+const spirit = urlParams.get("spirit");
+
+const url = "https://cocktails-240e.restdb.io/rest/recipes?spirit=" + spirit;
 
 // The API key
 const options = {
@@ -16,8 +19,8 @@ fetch(url, options)
   })
   .then((data) => {
     // we have the data
-    console.log(data);
-    // handleData(data);
+    // console.log(data);
+    getProductList(data);
   })
   .catch((e) => {
     // Something went wrong
@@ -26,30 +29,28 @@ fetch(url, options)
 
 // The code above is copied from the slides restdb.io (slide 34) how to fetch.
 
-//Code for recipe list
+//Code for recipes list
 
-//fetch data
-fetch("https://cocktails-240e.restdb.io/rest/recipes")
-  .then((res) => res.json())
-  .then(gotData);
-
-//
-function gotData(data) {
-  data.forEach(showRecipe);
+//loop
+function getProductList(drink) {
+  drink.forEach(showRecipe);
 }
 
 function showRecipe(recipe) {
-  const template = document.querySelector(".recipelist_template").content;
+  console.log(recipe);
+  console.log(recipe.img);
+
+  // create templates
+  const template = document.querySelector("#recipelist_template").content;
+
+  // clone the template
   const copy = template.cloneNode(true);
 
-  copy.querySelector(
-    "img"
-  ).src = `http://www.kea.paufiaschi.com/2sem/cocktails/${recipes._id}.jpeg`;
-  copy.querySelector("img").alt = recipe.name;
-  copy.querySelector("h2").textContent = recipes.name;
-  copy.querySelector("a").href = `productpage.html?recipe=${recipe.name}`;
+  // change dinamic data
 
-  const topParent = document.querySelector(".recipe_idea");
-  const elemParent = topParent.querySelector("a");
+  copy.querySelector("h3").textContent = recipe.Name;
+  copy.querySelector("img").setAttribute("src", recipe.img);
+
+  const elemParent = document.querySelector("main");
   elemParent.appendChild(copy);
 }
