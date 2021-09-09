@@ -82,6 +82,19 @@ img {
     height: auto;
 }
 
+body {
+    margin: 0;
+}
+
+.logoWrapper {
+    background-image: url(images/logo2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 8vw;
+    margin-top: 4vw;
+}
+
 
 /*What does this really do? */
 
