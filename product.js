@@ -15,6 +15,7 @@ const options = {
 fetch(url, options)
   .then((res) => res.json())
   .then((data) => showCocktail(data));
+
 // populate the page
 
 function showCocktail(cocktail) {
