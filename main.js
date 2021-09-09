@@ -1,7 +1,10 @@
 const urlParams = new URLSearchParams(window.location.search);
 const spirit = urlParams.get("spirit");
 
-const url = "https://cocktails-240e.restdb.io/rest/recipes?Spirit=" + spirit;
+const url =
+  "https://cocktails-240e.restdb.io/rest/recipes?q={%22Spirit%22%20:%20{%22$in%22%20:%20[%22" +
+  spirit +
+  "%22]}}";
 
 // The API key
 const options = {
