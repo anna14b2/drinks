@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recipe list</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="recipelist.html">recipes</a></li>
+          <li><a href="#">about</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h1>ON THE ROCKS</h1>
-  </header>
-
-  <main id="recipe_list">
-    <h2 class="spirit-header">Vodka</h2>
-    <template id="recipelist_template">
-      <section class="recipe_idea">
-        <a href="productpage.html"><img src="images/strawberry-daiquiri.webp" alt="strawberry-daiquiri" />
-          <h3>Drink name</h3>
-        </a>
-      </section>
-    </template>
-    <!-- <section>
+    <main id="recipe_list">
+      <h2 class="spirit-header">Vodka</h2>
+      <template id="recipelist_template">
+        <section class="recipe_idea">
+          <a href="productpage.html"
+            ><img
+              src="images/strawberry-daiquiri.webp"
+              alt="strawberry-daiquiri"
+            />
+            <h3>Drink name</h3>
+          </a>
+        </section>
+      </template>
+      <!-- <section>
         <a href="productpage.html"
           ><img
             src="images/strawberry-daiquiri.webp"
@@ -68,9 +77,8 @@
           <h2>Drink name</h2></a
         >
       </section> -->
-    <script src="main.js"></script>
-  </main>
-  <footer></footer>
-</body>
-
+      <script src="main.js"></script>
+    </main>
+    <footer></footer>
+  </body>
 </html>
